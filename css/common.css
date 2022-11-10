@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+body, ul ,li, a, div, h1, h2, p { margin: 0; padding:0; }
+ul li { list-style: none;}
+a { text-decoration: none; }
+span { font-weight: bold;}
+
+body { width:1903px; height:3700px; margin: 0 auto; position: relative;  }
+
+#header { width:100%; height: 70px;
+          /* background:rgba(0,0,0,0.5); */
+          position: absolute; top:0; left:0; z-index: 1; }
+#head { width:240px; height:54px; margin-top:9px; margin-left:60px;
+        background:url(../images/titlelogo.png) no-repeat center / cover; }
+#head a { width:100%; height:45px; display: block; }
+
+.headul { width: 1303px; height: 70px; position: absolute; top:0;left:440px; }
+.headul > li a { color:#fff; font-size: 28px; margin-right: 110px;}
+.headul > li > a:hover { color:red; font-size: 28px; margin-right: 110px; }
+
+.headul > li { width:300px; float: left; line-height:70px; }
+.headul1 { display:none; }
+.headulll { text-align:center;
+             }
+.headull {
+            background:#161616;
+            border-radius: 0;  border-bottom:0px solid #39f;
+            text-align:center;
+           }
+.headul1 li { height:30px; line-height:30px; }
+.headul1 li a { font-size:16px; text-align:center; color:#a6a6a1; }
+.headul1 li a:hover { font-size:16px; text-align:center; color:red; }
+
+.wall { width:100%; height:100vh; position:fixed; top:0; left:0;
+        background:url(../images/wall.png) no-repeat center / cover; }
+.wall::before { content:""; width:100%; height:100vh; position:fixed; top:0; left:0;
+                background:#000; opacity:0.5;  }
+
+.log { position: absolute; top:23px; left:85%;}
+.log a { color:#fff; font-size:18px; font-weight: 400;}
+.log a:hover { color:red; }
+#top { position:absolute; top:450px; right:50px; z-index:1; }
+
+#top ul { width:20px; height:100px; }
+#top ul li { width:20px; height:20px; margin-top:10px;  border-radius:20px 20px;  }
+#top ul li a { width:100%; height:20px; display: block; }
+.top1 { background:yellow; border: 2px solid #fff; }
+.top2 { background:purple; border: 2px solid #fff; }
+.top3 { background:#000;; border: 2px solid #fff; }
+.top4 { background:#39f; border: 2px solid #fff; }
+.btn { border: 2px solid #000;  background:#fff; }
+
+#slider { width: 100%; height:800px;  }
+#slider .slider { width:100%; height:800px; }
+.slider li { width:100%; height:800px; position:absolute; }
+.slider li a { width:100%; height:800px; display: block; }
+
+.slider1 { background:url(../images/dream.png) no-repeat center / cover; opacity:1; }
+.slider2 { background:url(../images/extensiontitle.jpg) no-repeat center / cover; opacity:0; }
+.slider3 { background:url(../images/glory.png) no-repeat center / cover; opacity:0; }
+.slider4 { background:url(../images/only.png) no-repeat center / cover; opacity:0; }
+
+
+#screen { width:1400px; height:2950px;
+          position:absolute; top:750px; left:250px; z-index: 1;
+ }
+
+
+.road { width:1400px; height:870px;
+        position:relative; margin: 0 auto;
+        background: url(../images/video.gif) no-repeat center / cover ; text-align: center; }
+
+.road .road1 { color:#fff; line-height:870px; position:absolute; left: 425px; opacity:1;
+          font-size: 72px; font-weight: 100; }
+
+.road .road2 { color:#fff; position:absolute; top:450px; left: 510px; opacity:0;
+              font-size: 72px; font-weight: 100; }
+
+.road::before { content:""; width:100%; height:870px;
+                background:#000; opacity:0.8; position:absolute; top:0; left:0; }
+
+.ridd { width:74%; height:220px; margin: 0 auto;
+        position: absolute; top:230px; left: 180px; }
+
+.rid {  width:134px; height:220px; opacity:0;
+        background:url(../images/logo.png) no-repeat center / cover;
+        margin: 0 auto; }
+
+
+#about { width:1400px; height:1000px; color:#fff; margin: 0 auto; text-align: center;
+          padding-top:350px; box-sizing: border-box;}
+
+.about { width:1165px; height:182px; opacity:0;
+         position:absolute; top:900px; left:-1048px; background:url(../images/gameabout.png) no-repeat center / cover; }
+
+.about1 { width:400px; height:400px; opacity:0;
+          animation-name: dol;
+          animation-duration: 3s;
+          animation-delay: 2s;
+          animation-timing-function: ease;
+          animation-iteration-count:1;
+          animation-direction: normal;
+          transform-origin: 200px 200px;
+          position: absolute; top:930px; left: 950px;
+          background:url(../images/clearstar.png) no-repeat center / cover; }
+
+          @keyframes dol {
+            0% { transform:rotate(0deg) }
+            100% { transform:rotate(360deg) }
+          }
+
+#about h2 { font-size:18px; font-weight:lighter; line-height:100px; opacity:0; }
+#about h2 > span { font-weight: bold; font-size: 32px;}
+#about p { font-weight: lighter; font-size:18px; line-height:38px; opacity:0; }
+#about p > span { font-weight: bold; font-size:22px; }
+
+#cha { width: 1400px; height:1050px; position:relative; padding-top:200px; box-sizing: border-box; }
+#cha .cha1 {  width:1165px; height:182px; opacity:0;
+          position:absolute; top:-50px; left:-1048px; background:url(../images/character.png) no-repeat center / cover; }
+.cha11 { width:250px; height:250px; opacity:0;
+          animation-name: dol;
+          animation-duration: 3s;
+          animation-delay: 2s;
+          animation-timing-function: ease;
+          animation-iteration-count:1;
+          animation-direction: ease;
+          transform-origin: 125px 125px;
+          position: absolute; top:-150px; left: 850px;
+          background:url(../images/failstar.png) no-repeat center / cover; }
+
+          @keyframes dol {
+            0% { transform:rotate(0deg) }
+            100% { transform:rotate(360deg) }
+          }
+
+.modesel { width:150px; height:480px; background:rgba(0,0,0,0.5); opacity:0; position: absolute; top:170px; }
+.modesel ul li { width:150px; height:80px; }
+.modesel li a { width:150px; height:80px; font-size:24px;
+              display: block; color:#fff; line-height:80px; text-align: center;}
+
+.modesel1 { width:1250px; height:640px; opacity:0;
+            position: absolute; top:170px; left:150px;}
+
+.modesel1 li { width:1250px; height:640px; font-size: 24px; font-weight: lighter;
+              position: absolute; top:0; left:0; color:#fff; text-align: center; line-height: 40px; }
+.modesel1 li > span { font-size: 32px; font-weight: bold; line-height: 120px; }
+
+
+.onl { background:#f6a811; }
+
+.ont { z-index:1; }
+.online1 { background:url(../images/online1.jpg) no-repeat center / cover; }
+.free1 { background:url(../images/freestyle1.jpg) no-repeat center / cover; }
+.air1 { background:url(../images/air1.jpg) no-repeat center / cover; }
+.miss1 { background:url(../images/mission1.jpg) no-repeat center / cover; }
+.rank1 { background:url(../images/ranking1.jpg) no-repeat center / cover; }
+.coll1 { background:url(../images/collection1.jpg) no-repeat center / cover; }
+
+#dlc { width:1400px; height: 964px; margin: 0 auto;
+        padding-top:200px; box-sizing: border-box; position:relative; }
+
+#dlc .dlcc { width:1400px; height:50px; margin: 0 auto; background:rgba(0,0,0,0.5); position:relative; }
+
+.dlcc1 { width:270px; height:50px; position: absolute; top:0; left: 0; z-index:1; }
+.dlcc1 a { width:270px; height:50px; display:block;  }
+.dlcc2 { width:270px; height:50px; position: absolute; left:236px;  }
+.dlcc2 a { width:270px; height:50px; display:block;  }
+
+.dlcc11 { background:url(../images/respect1.png)no-repeat center / cover;
+          position:absolute; left:0; }
+.dlcc12 { background:url(../images/respect2.png)no-repeat center / cover;
+          position:absolute; left:0; }
+.dlcc21 { background:url(../images/coll2.png)no-repeat center / cover; }
+.dlcc22 { background:url(../images/coll1.png)no-repeat center / cover; }
+
+.dlc1 { width:1400px; height: 480px; opacity:1;
+        position:absolute; top:350px; left: 0; z-index:1 }
+.dlc1 ul { float: left; }
+.dlcul1 { width:700px; height:480px;   }
+.dlcul1 li { width:700px; height:120px; }
+.dlcul1 li a { width:700px; height:120px; display:block; font-weight: lighter;
+            text-indent: 170px; color:#fff; line-height:120px; font-size:28px; }
+
+.dlcli1 { background:url(../images/ext1t.png) no-repeat center / cover; }
+.dlcli1:hover { background:url(../images/ext1tt.png) no-repeat center / cover; }
+
+.dlcli2 { background:url(../images/ext2t.png) no-repeat center / cover; }
+.dlcli2:hover { background:url(../images/ext2tt.png) no-repeat center / cover; }
+
+.dlcli3 { background:url(../images/tport3t.png) no-repeat center / cover; }
+.dlcli3:hover { background:url(../images/tport3tt.png) no-repeat center / cover; }
+
+.dlcli4 { background:url(../images/black1t.png) no-repeat center / cover; }
+.dlcli4:hover { background:url(../images/black1tt.png) no-repeat center / cover; }
+
+.dlcli5 { background:url(../images/tech1t.png) no-repeat center / cover; }
+.dlcli5:hover { background:url(../images/tech1tt.png) no-repeat center / cover; }
+
+.dlcli6 { background:url(../images/tech2t.png) no-repeat center / cover; }
+.dlcli6:hover { background:url(../images/tech2tt.png) no-repeat center / cover; }
+
+.dlcli7 { background:url(../images/tech3h.png) no-repeat center / cover; }
+.dlcli7:hover { background:url(../images/tech3ht.png) no-repeat center / cover; }
+
+.dlcli8 { background:url(../images/techQt.png) no-repeat center / cover; }
+.dlcli8:hover { background:url(../images/techQtt.png) no-repeat center / cover; }
+
+.dlcul2 { width:695px; height:480px;  }
+.dlcul2 li { width:695px; height:120px; }
+.dlcul2 li a { width:695px; height:120px; display:block; font-weight: lighter;
+            text-indent: 170px; color:#fff; line-height:120px; font-size:28px; }
+
+.dlc2 { width:1400px; height: 480px; z-index:0;
+        position:absolute; top:350px; left: 0; opacity:0;
+}
+.dlc2 ul { float: left; }
+
+.dlcul3 { width:700px; height:600px;  }
+.dlcul3 li { width:700px; height:120px; }
+.dlcul3 li a { width:700px; height:120px; display:block; font-weight: lighter;
+            text-indent: 170px; color:#fff; line-height:120px; font-size:28px; }
+
+.dlcul4 { width:700px; height:600px;  }
+.dlcul4 li { width:700px; height:120px; }
+.dlcul4 li a { width:700px; height:120px; display:block; font-weight: lighter;
+            text-indent: 170px; color:#fff; line-height:120px; font-size:28px; }
+
+
+.dlcli9 { background:url(../images/nexont.png) no-repeat center / cover; }
+.dlcli9:hover { background:url(../images/nexontt.png) no-repeat center / cover; }
+
+.dlcli10 { background:url(../images/chut.png) no-repeat center / cover; }
+.dlcli10:hover { background:url(../images/chutt.png) no-repeat center / cover; }
+
+.dlcli11 { background:url(../images/muse1t.png) no-repeat center / cover; }
+.dlcli11:hover { background:url(../images/muse1tt.png) no-repeat center / cover; }
+
+.dlcli12 { background:url(../images/groovet.png) no-repeat center / cover; }
+.dlcli12:hover { background:url(../images/groovett.png) no-repeat center / cover; }
+
+.dlcli13 { background:url(../images/cytust.png) no-repeat center / cover; }
+.dlcli13:hover { background:url(../images/cytustt.png) no-repeat center / cover; }
+
+.dlcli14 { background:url(../images/teemot.png) no-repeat center / cover; }
+.dlcli14:hover { background:url(../images/teemott.png) no-repeat center / cover; }
+
+.dlcli15 { background:url(../images/girlt.png) no-repeat center / cover; }
+.dlcli15:hover { background:url(../images/girltt.png) no-repeat center / cover; }
+
+.dlcli16 { background:url(../images/estit.png) no-repeat center / cover; }
+.dlcli16:hover { background:url(../images/estitt.png) no-repeat center / cover; }
+
+#dlc .dlct { width:1165px; height:182px; opacity:0;
+          position:absolute; top:-50px; left:-1048px; background:url(../images/playlist.png) no-repeat center / cover; }
+#dlc .dlct1 { width: 150px; height:99px; opacity:0;
+          position: absolute; top: 15px; left: 800px;
+          background:url(../images/superstar.png) no-repeat center / cover;
+          animation-name: doll;
+          animation-duration: 6s;
+          animation-delay: 2s;
+          animation-timing-function: ease;
+          animation-iteration-count:infinite;
+          animation-direction: ease;
+          transform-origin: 75px 99px;
+ }
+
+          @keyframes doll {
+            from { transform:rotateX(0deg) rotateY(0deg); }
+            to { transform:rotateX(0deg) rotateY(360deg); }
+          }
+         }
+
+
+
+footer { width:100%; height:100px; }
+#neo { width:100%; height:100px; background:#333; position: absolute; top:4600px; padding-top:50px; }
+.neo { background:url(../images/neowiz.png) no-repeat center / cover;
+      width:100px; height:16px; margin: 0 auto; }
+footer p { font-size:12px; color:#fff; line-height:50px; text-align: center;}
